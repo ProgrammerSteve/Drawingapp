@@ -1,0 +1,2 @@
+export const SET_BRUSH_SIZE="SET_BRUSH_SIZE";
+export const SET_BRUSH_COLOR="SET_BRUSH_COLOR";

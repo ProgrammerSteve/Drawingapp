@@ -1,7 +1,25 @@
 import '../styles/globals.css'
+import Navigation from '../components/navigation/Navigation'
+import { wrapper, store } from "../redux/store";
+import { Provider } from "react-redux";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const pageStyle={
+  display:'flex',
+  flexDirection:"column",
+  height:"100vh",
+  width:"100wh",
 }
 
-export default MyApp
+
+function MyApp({ Component, pageProps }) {
+  return(
+  <Provider store={store}>
+  <div style={pageStyle}>
+  <Navigation/>
+  <Component {...pageProps} />
+  </div>
+  </Provider>
+  )
+}
+
+export default wrapper.withRedux(MyApp);
