@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useLayoutEffect, useRef, lazy } from 'react'
+import React, { useEffect, useState, useLayoutEffect, useRef } from 'react'
 import Toolbar from '../components/toolbar/Toolbar';
 import { useSelector} from 'react-redux'
 
