@@ -83,9 +83,10 @@ export default function Home() {
                   }}>
                     <canvas 
                     ref={canvasRef}
-                    onMouseDown={handleMouseDown} 
-                    onMouseUp={handleMouseUp.bind(this,brushSize)} 
-                    onMouseMove={handleMouseMove} 
+                    onPointerDown={handleMouseDown} 
+                    onPointerUp={handleMouseUp.bind(this,brushSize)} 
+                    onPointerMove={handleMouseMove} 
+                    
                     style={{
                       border:"2px solid black", 
                       width:'700px',
