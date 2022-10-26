@@ -101,6 +101,7 @@ export default function Home() {
                       backgroundColor:"#2d5050",
                       display:"flex",
                       justifyContent:"center",
+                      userSelect:"none"
                     }}>Reset</div>
                   </div>
               </div>
